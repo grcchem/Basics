@@ -1,0 +1,33 @@
+# Practice Pandas
+# Create List
+import pandas as pd
+
+list = [['Ganesh', 50], 
+        ['Ram', 34],
+        ['Chandran', 40]]
+List = pd.DataFrame(list, columns = ['Name', 'Age'])
+print(List)
+
+
+# Dictionary & Index
+import pandas as pd
+
+data = {'Name': ['Ganesh', 'Ram', 'Chandran'],
+        'Age': [50, 40, 30]}
+Data = pd.DataFrame(data)
+print(Data, "\n")
+Data = pd.DataFrame(data, index = ['A', 'B', 'C'])
+print(Data, "\n")
+list = [[1,2,3], [4,5,6]]
+print(list,"\n") # without converting into dataframe
+list_t = pd.DataFrame(list)
+print(list_t, "\n")
+print(list_t.transpose())
+
+
+# Create Table
+# table = [ ["Ganesh", "Ram", "Chandran"],  [20, 30, 40],  [1000, 2000, 3000] ]
+table = [[1,2,4], [4,5,6], [7,8,9]]
+Tab = pd.DataFrame(table, index = ["a", "b", "c"])
+print(Tab)
+
